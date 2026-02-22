@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:padding="@dimen/margin_medium">
+
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/previous_button"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutContent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutContent"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/card_background"
+        android:padding="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNext"
+        app:layout_constraintStart_toEndOf="@+id/buttonPrevious"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewArtwork"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/artwork_1_title"
+            android:scaleType="centerCrop"
+            android:src="@drawable/artwork_1_morning_pine"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_medium"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artwork_1_title"
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artwork_1_artist"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <TextView
+                android:id="@+id/textViewYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artwork_1_year"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/next_button"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayoutContent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
