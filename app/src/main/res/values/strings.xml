@@ -1,3 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab2Mobile__Art_space</string>
+    <string name="app_name">Art Space Gallery</string>
+
+    <string name="previous_button">Previous</string>
+    <string name="next_button">Next</string>
+
+    <string name="artwork_1_title">Morning in a Pine Forest</string>
+    <string name="artwork_1_artist">Ivan Shishkin, Konstantin Savitsky</string>
+    <string name="artwork_1_year">1889</string>
+
+    <string name="artwork_2_title">Mona Lisa</string>
+    <string name="artwork_2_artist">Leonardo da Vinci</string>
+    <string name="artwork_2_year">1503-1519</string>
+
+    <string name="artwork_3_title">Sunflowers</string>
+    <string name="artwork_3_artist">Vincent van Gogh</string>
+    <string name="artwork_3_year">1888-1889</string>
+
+    <string name="artwork_4_title">Sistine Madonna</string>
+    <string name="artwork_4_artist">Raphael</string>
+    <string name="artwork_4_year">1512-1513</string>
+
+    <string name="previous_button_desc">Go to previous artwork</string>
+    <string name="next_button_desc">Go to next artwork</string>
 </resources>
